@@ -15,3 +15,7 @@ class Rain
   end
 
 end 
+
+
+today = Rain.new
+today.view_rain

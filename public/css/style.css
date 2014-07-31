@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Anton|Oswald);
+@import url(http://fonts.googleapis.com/css?family=Hind);
+
+body{
+  background-image:url('sunny_day.jpg');
+  background-size: 2460px 1340px; 
+}
+
+h1{
+  font-size: 75px;
+  color: #FFFF00;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2{
+  font-size: 50px;
+  color: black;
+  font-family: 'Hind', sans-serif;
+  color: white;
+}
+
+.text{
+  font-family: 'Hind', sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+.box{
+  background-color: rgba(0,0,0,.5);
+  border-radius: 15px;
+}
+
+body{
+<%= @rain.view_rain.gsub("%" "").to_i = @rain_pic 
+      if @rain_pic >= 20 
+      background-image:url('rainy-day.jpeg');
+      end %>
+    }

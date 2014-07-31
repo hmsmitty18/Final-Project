@@ -22,10 +22,4 @@ class Weather
   end
 
 end
-
-
-
-test = Weather.new
-test.weather_now
-test.weather_today
-test.weather_tonight
+ 

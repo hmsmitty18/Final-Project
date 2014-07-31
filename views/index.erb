@@ -1,0 +1,18 @@
+<head>
+<title> The Weather </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<h1> <center> Weather </center>  </h1>
+  <div class = box>
+    <h2> <center> Today's weather:</center></h2>
+    <div class = text>
+      <p> <center> The weather is currently <%= @weather.weather_now %> </center> </p> 
+      <p> <center> Today, the high will be <%= @weather.weather_today %> </center> </p> 
+      <p> <center> Tonight, the low will be <%= @weather.weather_tonight %> </center> </p> 
+      <p> <center> Today the chance of rain is <%= @rain.view_rain%> </center> </p> 
+    </div>
+</div>
+</body>

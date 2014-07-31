@@ -1,7 +1,6 @@
-require 'rubygems' # not necessary with ruby 1.9 but included for completeness
-require 'twilio-ruby'
 require_relative 'weather.rb'
 require_relative 'umbrella.rb'
+# require 'twilio-ruby'
 
 
 
@@ -28,7 +27,3 @@ class Text
     end
 
 end
-
-
-my_text = Text.new
-my_text.text
