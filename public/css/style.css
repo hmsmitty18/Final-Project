@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Anton|Oswald);
 @import url(http://fonts.googleapis.com/css?family=Hind);
 
-body{
+/*body{
   background-image:url('sunny_day.jpg');
   background-size: 2460px 1340px; 
-}
+}*/
 
 h1{
   font-size: 75px;
@@ -30,9 +30,3 @@ h2{
   border-radius: 15px;
 }
 
-body{
-<%= @rain.view_rain.gsub("%" "").to_i = @rain_pic 
-      if @rain_pic >= 20 
-      background-image:url('rainy-day.jpeg');
-      end %>
-    }
