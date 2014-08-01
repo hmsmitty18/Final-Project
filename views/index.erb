@@ -20,6 +20,12 @@
 
       <% end %>
 
+
+
+
+
+
+
 <h1> <center> Weather </center>  </h1>
   <div class = box>
     <h2> <center> Today's weather:</center></h2>
@@ -28,6 +34,24 @@
       <p> <center> Today, the high will be <%= @weather.weather_today %> </center> </p> 
       <p> <center> Tonight, the low will be <%= @weather.weather_tonight %> </center> </p> 
       <p> <center> Today the chance of rain is <%= @rain.view_rain%> </center> </p> 
+    <% pic = @rain.view_rain.gsub("%", "")  %>
+    <% @rain_pic = pic.to_i %>
+    <% sunny = @weather.weather_today.gsub("˚", "") %>
+    <% @sunny_text = sunny.to_i %>
+
+      <% if @rain_pic <= 50 && @sunny_text >= 75 %>
+        <p> <center> Go outside and play today! It's hot! </center> </p>
+      <% end %>
+
+      <% if @rain_pic >= 90 %>
+        <p> <center> You might want to stay inside today, its probably going to be pretty wet </center> </p>
+      <% end %>
+
+      <% if @sunny_text <= 30 %>
+        <p> <center> You might freeze your balls off today </center> </p>
+      <% end %>
+
+
     </div>
 </div>
 </body>
