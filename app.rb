@@ -14,3 +14,24 @@ get '/' do
   @rain = Rain.new
   erb :index
 end
+
+get '/news' do 
+   @weather =  Weather.new
+  @rain = Rain.new
+  erb :news
+end
+
+get '/contact' do 
+   @weather =  Weather.new
+  @rain = Rain.new
+  erb :contact
+end
+
+get '/about' do 
+   @weather =  Weather.new
+  @rain = Rain.new
+  erb :about
+end
+
+
+  

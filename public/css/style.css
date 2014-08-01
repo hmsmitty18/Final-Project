@@ -31,3 +31,45 @@ h2{
   margin-top: -40px;
 }
 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float:left;
+     font-family: Verdana;
+     display: block;
+     width: 100px;
+     padding-left: 220px;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     padding-top: 10px;
+}
+
+li a {
+  color: yellow;
+  text-decoration: none;
+}
+
+
+a:hover
+{
+background-color: gray;
+}
+
+#navbar{
+    background: rgba(0,0,0,.5);
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
+
+
