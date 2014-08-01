@@ -43,12 +43,16 @@
         <p> <center> Go outside and play today! It's hot! </center> </p>
       <% end %>
 
-      <% if @rain_pic >= 90 %>
+      <% if @rain_pic >= 90 && sunny_text < 30 %>
         <p> <center> You might want to stay inside today, its probably going to be pretty wet </center> </p>
       <% end %>
 
       <% if @sunny_text <= 30 %>
         <p> <center> You might freeze your balls off today </center> </p>
+      <% end %>
+
+      <% if @rain_pic >=90 && @sunny_text <= 30 %>
+        <p> <center> You might want to whip out your cross country skies. Expect snow! </center> </p>
       <% end %>
 
 
