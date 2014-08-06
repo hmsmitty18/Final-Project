@@ -8,7 +8,7 @@
 
 h1{
   font-size: 100px;
-  color: #FFFF00;
+  color: #E7D727;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -52,7 +52,7 @@ li {
 }
 
 li a {
-  color: yellow;
+  color: #E7D727;
   text-decoration: none;
 }
 
@@ -69,7 +69,14 @@ background-color: gray;
     border-radius: 15px;
 }
 
+.yellow_other{
+  color: black;
+}
 
+.text_box{
+  background-color: rgba(0,0,0,.5);
+  border-radius: 30px;
+}
 
 
 

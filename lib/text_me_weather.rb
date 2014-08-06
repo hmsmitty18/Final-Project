@@ -21,7 +21,7 @@ class Text
 
         :from => '+18152642023',
         :to => '+16468121991',
-        :body => "Hey Harrison! The weather now is #{@weather.weather_now}. The weather today is #{@weather.weather_today}. The tempature tonight is #{@weather.weather_tonight} The percent chance of rain today is: #{@rain.view_rain}.  For the same information with a prettier display go to: http://intense-shore-3935.herokuapp.com/"
+        :body => "Hey Harrison! The weather now is #{@weather.weather_now}. The weather today is #{@weather.weather_today}. The tempature tonight is #{@weather.weather_tonight} The percent chance of rain today is: #{@rain.view_rain}  For the same information with a prettier display go to: http://intense-shore-3935.herokuapp.com/"
       )
 
     end

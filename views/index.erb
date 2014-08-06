@@ -49,19 +49,19 @@
     <% @sunny_text = sunny.to_i %>
 
       <% if @rain_pic <= 50 && @sunny_text >= 75 %>
-        <p> <center> Go outside and play today! It's hot! </center> </p>
+        <p> <center> It's getting hot in here, so take off all your clothes </center> </p>
       <% end %>
 
-      <% if @rain_pic >= 90 && sunny_text < 30 %>
-        <p> <center> You might want to stay inside today, its probably going to be pretty wet </center> </p>
+      <% if @rain_pic >= 80 %>
+        <p> <center> ITS GON' RAIN! </center> </p>
       <% end %>
 
       <% if @sunny_text <= 30 %>
-        <p> <center> You might freeze your balls off today </center> </p>
+        <p> <center> It's time to whip out that mink pimp-coat you've always wanted to wear </center> </p>
       <% end %>
 
       <% if @rain_pic >=90 && @sunny_text <= 30 %>
-        <p> <center> You might want to whip out your cross country skies. Expect snow! </center> </p>
+        <p> <center> Let it snow! </center> </p>
       <% end %>
 
 
