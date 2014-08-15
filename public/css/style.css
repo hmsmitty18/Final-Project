@@ -6,15 +6,20 @@
   background-size: 2460px 1340px; 
 }*/
 
+* {
+  text-align: center;
+}
 h1{
   font-size: 100px;
   color: #E7D727;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 
 h2{
   font-size: 50px;
   color: black;
+  text-align: center;
   font-family: 'Hind', sans-serif;
   color: white;
 }
@@ -39,13 +44,10 @@ ul {
 }
 
 li {
-    display: inline;
     float:left;
      font-family: Verdana;
      display: block;
-     width: 100px;
-     padding-left: 220px;
-     text-align: center;
+     width: 25%;
      color: white;
      text-decoration: none;
      padding-top: 10px;
@@ -57,9 +59,8 @@ li a {
 }
 
 
-a:hover
-{
-background-color: gray;
+a:hover{
+  background-color: gray;
 }
 
 #navbar{
@@ -78,6 +79,7 @@ background-color: gray;
   border-radius: 30px;
 }
 
-
-
+p {
+  text-align: center;
+}
 

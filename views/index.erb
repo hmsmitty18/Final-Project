@@ -9,8 +9,7 @@
 
 
 
-  <% pic = @rain.view_rain.gsub("%", "")  %>
-  <% @rain_pic = pic.to_i %>
+  <% @rain_pic = @rain.view_rain.to_i %>
       <% if @rain_pic >= 75 %>
         <style>
           body { background-image:url('css/rainy-day.jpeg'); }
@@ -35,33 +34,32 @@
 
 
 
-<h1> <center> Weather </center>  </h1>
+<h1>  Weather   </h1>
   <div class = "box">
-    <h2> <center> Today's weather:</center></h2>
+    <h2>  Today's weather:</h2>
     <div class = "text">
-      <p> <center> The weather is currently <%= @weather.weather_now %> </center> </p> 
-      <p> <center> Today, the high will be <%= @weather.weather_today %> </center> </p> 
-      <p> <center> Tonight, the low will be <%= @weather.weather_tonight %> </center> </p> 
-      <p> <center> Today the chance of rain is <%= @rain.view_rain%> </center> </p> 
-    <% pic = @rain.view_rain.gsub("%", "")  %>
-    <% @rain_pic = pic.to_i %>
+      <p>  The weather is currently <%= @weather.weather_now %>  </p> 
+      <p>  Today, the high will be <%= @weather.weather_today %>  </p> 
+      <p>  Tonight, the low will be <%= @weather.weather_tonight %>  </p> 
+      <p>  Today the chance of rain is <%= @rain.view_rain%>  </p> 
+    <% @rain_pic = @rain.view_rain.to_i %>
     <% sunny = @weather.weather_today.gsub("˚", "") %>
     <% @sunny_text = sunny.to_i %>
 
       <% if @rain_pic <= 50 && @sunny_text >= 75 %>
-        <p> <center> It's getting hot in here, so take off all your clothes </center> </p>
+        <p>  It's getting hot in here, so take off all your clothes  </p>
       <% end %>
 
       <% if @rain_pic >= 80 %>
-        <p> <center> ITS GON' RAIN! </center> </p>
+        <p>  ITS GON' RAIN!  </p>
       <% end %>
 
       <% if @sunny_text <= 30 %>
-        <p> <center> It's time to whip out that mink pimp-coat you've always wanted to wear </center> </p>
+        <p>  It's time to whip out that mink pimp-coat you've always wanted to wear  </p>
       <% end %>
 
       <% if @rain_pic >=90 && @sunny_text <= 30 %>
-        <p> <center> Let it snow! </center> </p>
+        <p>  Let it snow!  </p>
       <% end %>
 
 
